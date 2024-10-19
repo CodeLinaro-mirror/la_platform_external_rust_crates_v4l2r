@@ -1,0 +1,11 @@
+{
+  "module_blocklist": ["runbindgen", "runbindgen_test_src_main"],
+  "package": {
+    "v4l2r": {
+      "dep_blocklist": ["libctrlc", "libclap"],
+      "add_module_block": "android/srcs.bp"
+    }
+  },
+  "run_cargo": false,
+  "tests": true
+}
