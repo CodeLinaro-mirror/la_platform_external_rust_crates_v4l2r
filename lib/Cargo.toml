@@ -1,14 +1,14 @@
 [package]
 name = "v4l2r"
-version = "0.0.5"
+version = "0.0.7"
 authors = ["Alexandre Courbot <gnurou@gmail.com>"]
 edition = "2021"
 description = "Safe and flexible abstraction over V4L2"
 repository = "https://github.com/Gnurou/v4l2r"
 categories = ["os"]
 keywords = ["v4l2", "video", "linux"]
-license = "MIT"
 
+license-file.workspace = true
 readme.workspace = true
 
 [features]
@@ -24,9 +24,10 @@ thiserror = "1.0"
 anyhow = "1.0"
 log = "0.4.14"
 enumn = "0.1.6"
+paste = "1.0"
 
 [build-dependencies]
-bindgen = "0.69"
+bindgen = "0.70.1"
 
 # For example programs
 [dev-dependencies]
