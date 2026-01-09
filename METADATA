@@ -1,13 +1,20 @@
+# This project was upgraded with external_updater.
+# Usage: tools/external_updater/updater.sh update external/rust/crates/v4l2r
+# For more info, check https://cs.android.com/android/platform/superproject/main/+/main:tools/external_updater/README.md
+
 name: "v4l2r"
 description: "Rust bindings for V4L2"
-third_party: {
+third_party {
+  license_type: NOTICE
+  last_upgrade_date {
+    year: 2025
+    month: 11
+    day: 3
+  }
   identifier {
     type: "Git"
     value: "https://github.com/Gnurou/v4l2r"
+    version: "7b441383125ae583017a1c18b3fc9ec6c88ddbe8"
     primary_source: true
-    version: "v0.0.4"
   }
-  version: "v0.0.4"
-  last_upgrade_date { year: 2024 month: 9 day: 20 }
-  license_type: NOTICE
 }
